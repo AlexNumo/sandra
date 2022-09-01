@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sandrochka-srtong-back/static/css/main.17654e45.css",
+    "main.js": "/sandrochka-srtong-back/static/js/main.02897d39.js",
+    "static/media/bck_img.jpg": "/sandrochka-srtong-back/static/media/bck_img.6262b91fc019d49f6a77.jpg",
+    "index.html": "/sandrochka-srtong-back/index.html",
+    "static/media/Close.svg": "/sandrochka-srtong-back/static/media/Close.8fddae41631fd0c52d1aba90b7b86b83.svg",
+    "main.17654e45.css.map": "/sandrochka-srtong-back/static/css/main.17654e45.css.map",
+    "main.02897d39.js.map": "/sandrochka-srtong-back/static/js/main.02897d39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17654e45.css",
+    "static/js/main.02897d39.js"
+  ]
+}
