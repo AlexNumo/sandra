@@ -13,7 +13,7 @@ const MainPage = () => {
 
     return (
         <MainPagePosition>
-            <SevriceText>Хочеш мати класну та сочну ЖОПУ?</SevriceText>
+            <SevriceText>Хочеш мати класну ДУПЦЮ?</SevriceText>
             <ServiceBtn onClick={handleOpen}>Записуйся</ServiceBtn>
             {open ? <Modal handleClose={handleClose} /> : null}
         </MainPagePosition>
