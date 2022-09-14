@@ -1,4 +1,4 @@
-import CircleCheck from '../../icons/circle.svg';
+// import CircleCheck from '../../icons/circle.svg';
 
 const Abonnement = () => {
     return (
