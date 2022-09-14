@@ -6,7 +6,7 @@ const BurgerMenu = () => {
         <Menu
             right
             width='100vh'
-            customBurgerIcon={ <img src={BurgerIcon} /> } 
+            customBurgerIcon={ <img src={BurgerIcon} alt="BurgerIcon"/> } 
         >
                 <a id="home" className="menu-item" href="/">Home</a>
                 <a id="about" className="menu-item" href="/about">About</a>
