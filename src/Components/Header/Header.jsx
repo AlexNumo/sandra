@@ -5,16 +5,28 @@ import Location from '../../icons/location.svg';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import RegistrationForm from '../RegistrationForm/RegistrationForm';
 import AuthForm from '../AuthForm/AuthForm';
+import "./style.css";
+// import { slide as Menu } from 'react-burger-menu';
 import { useState } from 'react';
 import {
     HeaderPosition,
     ImageIcon,
-    Contacts
+    Contacts,
+    BtnForm,
+    LinkStyle
 } from './Header.styled';
 
 const Header = () => {
     const [openSignUp, setOpenSignUp] = useState(false);
     const [openSignIn, setOpenSignIn] = useState(false);
+    const [openMenu, setOpenMenun] = useState(true);
+
+    const handleOpenMenu = () => {
+        setOpenMenun(true);
+    }
+    const handleCloseNenu = () => {
+        setOpenMenun(false);
+    }
 
     const handleOpenSignUp = () => {
         setOpenSignUp(true);
@@ -30,27 +42,36 @@ const Header = () => {
     }
     return (
         <HeaderPosition>
-            <h2>Кайфуй від себе</h2>
+            {/* <h2>Кайфуй від себе</h2> */}
             <Contacts>
                 <h3>Контакти:</h3>
-                <a href="https://www.facebook.com/sandra.pashko.1">
+                <LinkStyle href="https://www.facebook.com/sandra.pashko.1">
                     <ImageIcon src={Facebook} alt="Facebook" />
-                </a>
-                <a href="https://www.instagram.com/sandrochka_strong/">
+                </LinkStyle>
+                <LinkStyle href="https://www.instagram.com/sandrochka_strong/">
                     <ImageIcon src={Insta} alt="Instagram" />
-                </a>
-                <a href="tel:0981058240">
+                </LinkStyle>
+                <LinkStyle href="tel:0981058240">
                     <ImageIcon src={Phone} alt="Phone" />
-                </a>
-                <a href="https://www.google.com/maps/place/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%D0%B0+%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE+6/@48.4605719,35.041488,17z/data=!3m1!4b1!4m5!3m4!1s0x40dbe330d429cc65:0x80ac584e699f57be!8m2!3d48.4605913!4d35.0436336">
+                </LinkStyle>
+                <LinkStyle href="https://www.google.com/maps/place/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%D0%B0+%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE+6/@48.4605719,35.041488,17z/data=!3m1!4b1!4m5!3m4!1s0x40dbe330d429cc65:0x80ac584e699f57be!8m2!3d48.4605913!4d35.0436336">
                     <ImageIcon src={Location} alt="Location" />
-                </a>
+                </LinkStyle>
             </Contacts>
-            <button onClick={handleOpenSignUp}>Реєстрація</button>
-            <button onClick={handleOpenSignIn}>Авторизація</button>
+            <BtnForm onClick={handleOpenSignUp}>Реєстрація</BtnForm>
+            <BtnForm onClick={handleOpenSignIn}>Авторизація</BtnForm>
+            <div id="App">
+                <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"App"} />
+                <div id="page-wrap">
+                    {/* <h4>Menu</h4> */}
+                </div>
+                {/* <img src={BurgerMenuIcon} alt="BurgerMenuIcon" width='20px'/> */}
+            </div>
+            
             {openSignUp ? <RegistrationForm handleClose={handleCloseSignUp} /> : null}
             {openSignIn ? <AuthForm handleClose={handleCloseSignIn} /> : null}
-            <BurgerMenu/>
+
+
         </HeaderPosition>
     )
 }

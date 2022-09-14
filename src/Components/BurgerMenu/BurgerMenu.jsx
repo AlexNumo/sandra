@@ -1,12 +1,17 @@
-import BurgerMenuIcon from '../../icons/menu.svg';
+import { slide as Menu } from 'react-burger-menu';
+import BurgerIcon from '../../icons/menu.svg';
 
 const BurgerMenu = () => {
     return (
-        <div>
-            <button>
-                <img src={BurgerMenuIcon} alt="BurgerMenuIcon" />
-            </button>
-        </div>
+        <Menu
+            right
+            width='100vh'
+            customBurgerIcon={ <img src={BurgerIcon} /> } 
+        >
+                <a id="home" className="menu-item" href="/">Home</a>
+                <a id="about" className="menu-item" href="/about">About</a>
+                <a id="contact" className="menu-item" href="/contact">Contact</a>
+            </Menu>
     )
 }
 
