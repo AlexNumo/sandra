@@ -1,21 +1,15 @@
 const axios = require('axios');
 
-const API = ({
+const SignUpAPI = ({
         name,
-        surname,
-        tel,
         email,
-        age,
-        kind,
-        sizeLag}) => {
-    axios.post('https://whispering-eyrie-00516.herokuapp.com/api/contacts', {
+        password,
+    }) => {
+    axios.post('https://sandra-back-end.herokuapp.com', {
         name: name,
-        surname: surname,
-        tel: tel,
         email: email,
-        age: age,
-        kind: kind,
-        sizeLag: sizeLag})
+        password: password,
+    })
     .then(function (response) {
         console.log(response);
     })
@@ -29,4 +23,28 @@ const API = ({
     )
 }
 
-export default API;
+const SignInAPI = ({
+        email,
+        password,
+    }) => {
+    axios.post('https://sandra-back-end.herokuapp.com/users/signin', {
+        email: email,
+        password: password,
+    })
+    .then(function (response) {
+        console.log(response);
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+    return (
+        <div>
+            <h2>Відправлено</h2>
+        </div>
+    )
+}
+
+export {
+    SignUpAPI,
+    SignInAPI
+};

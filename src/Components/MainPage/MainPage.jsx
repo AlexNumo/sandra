@@ -1,4 +1,4 @@
-import Modal from "Components/Modal/Modal";
+import Modal from "Components/RegistrationForm/RegistrationForm";
 import { useState } from "react";
 import { MainPagePosition, ServiceBtn, SevriceText } from './MainPage.styled';
 

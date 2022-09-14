@@ -3,6 +3,9 @@ import Insta from '../../icons/instagram.svg';
 import Phone from '../../icons/phone.svg';
 import Location from '../../icons/location.svg';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
+import RegistrationForm from '../RegistrationForm/RegistrationForm';
+import AuthForm from '../AuthForm/AuthForm';
+import { useState } from 'react';
 import {
     HeaderPosition,
     ImageIcon,
@@ -10,6 +13,21 @@ import {
 } from './Header.styled';
 
 const Header = () => {
+    const [openSignUp, setOpenSignUp] = useState(false);
+    const [openSignIn, setOpenSignIn] = useState(false);
+
+    const handleOpenSignUp = () => {
+        setOpenSignUp(true);
+    }
+    const handleCloseSignUp = () => {
+        setOpenSignUp(false);
+    }
+    const handleOpenSignIn = () => {
+        setOpenSignIn(true);
+    }
+    const handleCloseSignIn = () => {
+        setOpenSignIn(false);
+    }
     return (
         <HeaderPosition>
             <h2>Кайфуй від себе</h2>
@@ -28,8 +46,10 @@ const Header = () => {
                     <ImageIcon src={Location} alt="Location" />
                 </a>
             </Contacts>
-            <button>Реєстрація</button>
-            <button>Авторизація</button>
+            <button onClick={handleOpenSignUp}>Реєстрація</button>
+            <button onClick={handleOpenSignIn}>Авторизація</button>
+            {openSignUp ? <RegistrationForm handleClose={handleCloseSignUp} /> : null}
+            {openSignIn ? <AuthForm handleClose={handleCloseSignIn} /> : null}
             <BurgerMenu/>
         </HeaderPosition>
     )

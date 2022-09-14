@@ -9,14 +9,13 @@ const ModalStyle = styled.div`
     left: 0;
     background-color: #ec63cf8d;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 `;
 
 const ModalFeedBack = styled.div`
     display: flex;
     flex-direction: column;
     width: 250px;
-    height: 550px;
     background-color: #53be7c;
 `;
 
