@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sandra/static/css/main.8a20b806.css",
-    "main.js": "/sandra/static/js/main.d6d86d90.js",
+    "main.css": "/sandra/static/css/main.f83ccec7.css",
+    "main.js": "/sandra/static/js/main.55cae372.js",
     "static/media/bck_img.jpg": "/sandra/static/media/bck_img.6262b91fc019d49f6a77.jpg",
     "static/media/instagram.svg": "/sandra/static/media/instagram.037f612ee43f30bf2c241e293d8abbb6.svg",
     "index.html": "/sandra/index.html",
@@ -10,11 +10,11 @@
     "static/media/phone.svg": "/sandra/static/media/phone.55638d8fbbb370fccf36b875b7162233.svg",
     "static/media/facebook.svg": "/sandra/static/media/facebook.8d9dc950dafd9bf742f16cab1e852ce5.svg",
     "static/media/menu.svg": "/sandra/static/media/menu.22926747132daf8f955df3c257085e8f.svg",
-    "main.8a20b806.css.map": "/sandra/static/css/main.8a20b806.css.map",
-    "main.d6d86d90.js.map": "/sandra/static/js/main.d6d86d90.js.map"
+    "main.f83ccec7.css.map": "/sandra/static/css/main.f83ccec7.css.map",
+    "main.55cae372.js.map": "/sandra/static/js/main.55cae372.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a20b806.css",
-    "static/js/main.d6d86d90.js"
+    "static/css/main.f83ccec7.css",
+    "static/js/main.55cae372.js"
   ]
 }
