@@ -6,7 +6,6 @@ import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import RegistrationForm from '../RegistrationForm/RegistrationForm';
 import AuthForm from '../AuthForm/AuthForm';
 import "./style.css";
-// import { slide as Menu } from 'react-burger-menu';
 import { useState } from 'react';
 import {
     HeaderPosition,
@@ -19,14 +18,6 @@ import {
 const Header = () => {
     const [openSignUp, setOpenSignUp] = useState(false);
     const [openSignIn, setOpenSignIn] = useState(false);
-    const [openMenu, setOpenMenun] = useState(true);
-
-    const handleOpenMenu = () => {
-        setOpenMenun(true);
-    }
-    const handleCloseNenu = () => {
-        setOpenMenun(false);
-    }
 
     const handleOpenSignUp = () => {
         setOpenSignUp(true);
@@ -42,7 +33,6 @@ const Header = () => {
     }
     return (
         <HeaderPosition>
-            {/* <h2>Кайфуй від себе</h2> */}
             <Contacts>
                 <h3>Контакти:</h3>
                 <LinkStyle href="https://www.facebook.com/sandra.pashko.1">
@@ -60,12 +50,10 @@ const Header = () => {
             </Contacts>
             <BtnForm onClick={handleOpenSignUp}>Реєстрація</BtnForm>
             <BtnForm onClick={handleOpenSignIn}>Авторизація</BtnForm>
-            <div id="App">
-                <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"App"} />
+            <div id="Menu">
+                <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"Menu"} />
                 <div id="page-wrap">
-                    {/* <h4>Menu</h4> */}
                 </div>
-                {/* <img src={BurgerMenuIcon} alt="BurgerMenuIcon" width='20px'/> */}
             </div>
             
             {openSignUp ? <RegistrationForm handleClose={handleCloseSignUp} /> : null}

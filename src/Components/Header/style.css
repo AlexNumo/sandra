@@ -79,6 +79,7 @@ body {
 .bm-menu-wrap{
     right: 0px;
     top: 0px;
+    width: 100% !important;
 }
 
 .bm-burger-bars{
