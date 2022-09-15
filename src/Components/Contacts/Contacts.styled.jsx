@@ -2,8 +2,11 @@ import styled from 'styled-components';
 
 const ContactsPosition = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 `;
 
 const LinkStyle = styled.a`
@@ -11,7 +14,7 @@ const LinkStyle = styled.a`
 `;
 
 const ImageIcon = styled.img`
-    width: 15px;
+    width: 25px;
 `;
 
 export {
