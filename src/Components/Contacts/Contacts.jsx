@@ -6,13 +6,12 @@ import {
     ImageIcon,
     ContactsPosition,
     LinkStyle
-} from './Header.styled';
+} from './Contacts.styled';
 
 const Contacts = () => {
     return (
         <>
             <ContactsPosition>
-                <h3>Контакти:</h3>
                 <LinkStyle href="https://www.facebook.com/sandra.pashko.1">
                     <ImageIcon src={Facebook} alt="Facebook" />
                 </LinkStyle>

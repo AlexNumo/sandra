@@ -22,7 +22,6 @@ const Heart = styled.div`
     display: inline-block;
     height: 20px;
     width: 20px;
-    /* margin: -8px -130px; */
     position: absolute;
     left: 45%;
     top: 45%;

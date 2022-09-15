@@ -1,28 +1,33 @@
+import Contacts from "Components/Contacts/Contacts";
 import {
     ScheduleStyle,
     SchedulePosition,
-    ScheduleList
+    ScheduleList,
+    ScheduleListName,
+    ScheduleListBTN,
+    ScheduleName
 } from './Schedule.styled';
 
 const Schedule = () => {
     return (
         <ScheduleStyle>
             <SchedulePosition>
-                <h2>Розклад</h2>
+                <ScheduleName>Розклад</ScheduleName>
                 <ScheduleList>
                     <div>
-                        <h3>Kengoo jumps</h3>
-                        <button>Записатися</button>
+                        <ScheduleListName>Kengoo jumps</ScheduleListName>
+                        <ScheduleListBTN>Записатися</ScheduleListBTN>
                     </div>
                     <div>
-                        <h3>High heels</h3>
-                        <button>Записатися</button>
+                        <ScheduleListName>High heels</ScheduleListName>
+                        <ScheduleListBTN>Записатися</ScheduleListBTN>
                     </div>
                     <div>
-                        <h3>Tabata</h3>
-                        <button>Записатися</button>
+                        <ScheduleListName>Tabata</ScheduleListName>
+                        <ScheduleListBTN>Записатися</ScheduleListBTN>
                     </div>
                 </ScheduleList>
+                <Contacts/>
             </SchedulePosition>
         </ScheduleStyle>
     )
