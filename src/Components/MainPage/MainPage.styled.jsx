@@ -4,10 +4,11 @@ import BackImgKengoo from '../../icons/Kengoo-1.jpg';
 import { NavLink } from "react-router-dom";
 
 const MainPagePosition = styled.div`
-    width: 100vh;
+    width: 100%;
     height: 100vh;
     background-image: url('${BackImgKengoo}');
     background-repeat: no-repeat;
+    background-position: top center;
     margin-left: auto;
     margin-right: auto;
 `;

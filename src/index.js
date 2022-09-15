@@ -5,10 +5,12 @@ import { BrowserRouter } from 'react-router-dom';
 // import { store } from './redux/store';
 import App from './App.jsx';
 import 'modern-normalize/modern-normalize.css';
+import GlobalStyle from 'GlobalStyles';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter basename="/sandra">
+      <GlobalStyle />
       {/* <Provider store={store}> */}
         <App />
       {/* </Provider> */}

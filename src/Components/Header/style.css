@@ -83,3 +83,17 @@ body {
 .bm-burger-bars{
     position: static;
 }
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1) rotate(-45deg);
+    }
+
+    20% {
+        transform: scale(1.25) rotate(-45deg);
+    }
+
+    40% {
+        transform: scale(1.5) rotate(-45deg);
+    }
+}
