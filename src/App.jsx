@@ -10,13 +10,8 @@ function App() {
     <>
       <Suspense fallback={"Downloading..."}>
         <Routes>
-          <Route path='/' element={<><Header /><MainPage /></>} >
-          </Route>
-          
-          <Route path='/abonnement' element={<Abonnement /> } />
-          
-          
-          
+          <Route path='/' element={<><Header /><MainPage /></>} />
+          <Route path='/abonnements' element={<Abonnement /> } /> 
         </Routes>
       </Suspense>
       <Toaster />

@@ -23,7 +23,7 @@ const MainPage = () => {
             <ServicePosition>
             <SevriceText>ARS FIT studio</SevriceText>
                 <ServiceBtn onClick={handleOpen}>Записуйся</ServiceBtn>
-                <AbonnementLink to='/abonnemets'>Абонементи</AbonnementLink>
+                <AbonnementLink to='/abonnements'>Абонементи</AbonnementLink>
             </ServicePosition>
             {open ? <Modal handleClose={handleClose} /> : null}
         </MainPagePosition>

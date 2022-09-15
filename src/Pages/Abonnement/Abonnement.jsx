@@ -3,14 +3,24 @@
 const Abonnement = () => {
     return (
         <div>
-            <div class="price-position">
+            <div
+                // class="price-position"
+            >
                 <h2>Plans Pricing</h2>
                 <p>Whether your time-saving automation needs are large or small, were here to help you scale.</p>
             </div>
-            <div class="subscription">
-                <div class="subscription-position">
-                    <button id="monthly" class="subscription-btn active-subscription">monthly</button>
-                    <button id="yearly" class="subscription-btn">yearly</button>
+            <div
+                // class="subscription"
+            >
+                <div
+                    // class="subscription-position"
+                >
+                    <button id="monthly"
+                        // class="subscription-btn active-subscription"
+                    >monthly</button>
+                    <button id="yearly"
+                        // class="subscription-btn"
+                    >yearly</button>
                 </div>
             </div>
             {/* <section class="plans">
