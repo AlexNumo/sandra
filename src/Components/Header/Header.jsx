@@ -37,6 +37,7 @@ const Header = () => {
             <div id="Menu">
                 <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"Menu"} />
                 <div id="page-wrap">
+
                 </div>
             </div>
             {openSignUp ? <RegistrationForm handleClose={handleCloseSignUp} /> : null}
