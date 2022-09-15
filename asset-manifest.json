@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/sandra/static/css/main.0567d55c.css",
-    "main.js": "/sandra/static/js/main.3ac28bde.js",
+    "main.js": "/sandra/static/js/main.ee807b63.js",
     "static/media/Kengoo-1.jpg": "/sandra/static/media/Kengoo-1.fed74eb9e5b6c73bd285.jpg",
     "index.html": "/sandra/index.html",
     "static/media/Close.svg": "/sandra/static/media/Close.8fddae41631fd0c52d1aba90b7b86b83.svg",
     "static/media/menu.svg": "/sandra/static/media/menu.22926747132daf8f955df3c257085e8f.svg",
     "main.0567d55c.css.map": "/sandra/static/css/main.0567d55c.css.map",
-    "main.3ac28bde.js.map": "/sandra/static/js/main.3ac28bde.js.map"
+    "main.ee807b63.js.map": "/sandra/static/js/main.ee807b63.js.map"
   },
   "entrypoints": [
     "static/css/main.0567d55c.css",
-    "static/js/main.3ac28bde.js"
+    "static/js/main.ee807b63.js"
   ]
 }
