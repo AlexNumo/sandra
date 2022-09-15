@@ -15,6 +15,7 @@ const BtnForm = styled.button`
 
 const HeartPosition = styled.div`
     position: relative;
+    top: -8px;
 `;
 
 const Heart = styled.div`
