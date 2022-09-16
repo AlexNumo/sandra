@@ -17,7 +17,7 @@ const Abonnement = () => {
     const [isActiveSmall, setActiveSmall] = useState(false);
     const [isActiveMedium, setActiveMedium] = useState(false);
     const [isActiveBig, setActiveBig] = useState(false);
-
+    console.log(choice);
     const ChoiceHandleSmall = (e) => {
         setChoice(e.target.value);
         setActiveSmall(!isActiveSmall);
