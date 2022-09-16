@@ -1,6 +1,7 @@
 import Header from "Components/Header/Header";
 import Check from '../../icons/check_circle.svg';
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./style.css";
 import {
     AbonementStyle,
@@ -11,11 +12,11 @@ import {
 } from './Abonnement.styled';
 
 const Abonnement = () => {
+    const Back = useNavigate();
     const [choice, setChoice] = useState('0');
     const [isActiveSmall, setActiveSmall] = useState(false);
     const [isActiveMedium, setActiveMedium] = useState(false);
     const [isActiveBig, setActiveBig] = useState(false);
-
 
     const ChoiceHandleSmall = (e) => {
         setChoice(e.target.value);
@@ -49,13 +50,11 @@ const Abonnement = () => {
             setActiveMedium(false);
         }
     }
-
-
-    console.log(choice);
     return (
         <div>
             <Header />
             <AbonementStyle>
+                <button type='button' onClick={() => Back(-1)}>Назад</button>
                 <h2>Виберіть кількість занять</h2>
                 <AbonementList>
                     <AbonementListStyle
