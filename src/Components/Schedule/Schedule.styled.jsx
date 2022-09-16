@@ -38,19 +38,10 @@ const ScheduleListName = styled.h3`
     margin-bottom: 10px;
 `;
 
-const ScheduleListBTN = styled.button`
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 23px;
-    font-weight: 400;
-    background-color: aqua;
-    border-radius: 22px;
-`;
-
 export {
     ScheduleStyle,
     SchedulePosition,
     ScheduleList,
     ScheduleListName,
-    ScheduleListBTN,
     ScheduleName
 };

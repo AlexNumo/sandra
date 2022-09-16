@@ -1,8 +1,8 @@
 import Modal from "Components/RegistrationForm/RegistrationForm";
 import { useState } from "react";
+import BTN from 'Components/BTN/BTN';
 import {
     MainPagePosition,
-    ServiceBtn,
     SevriceText,
     ServicePosition,
     AbonnementLink
@@ -22,7 +22,7 @@ const MainPage = () => {
         <MainPagePosition>
             <ServicePosition>
             <SevriceText>ARS FIT studio</SevriceText>
-                <ServiceBtn onClick={handleOpen}>Записуйся</ServiceBtn>
+                <BTN type="button" handleChange={handleOpen} TextBTN={'Записуйся'} />
                 <AbonnementLink to='/abonnements'>Абонементи</AbonnementLink>
             </ServicePosition>
             {open ? <Modal handleClose={handleClose} /> : null}

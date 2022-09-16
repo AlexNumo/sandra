@@ -11,6 +11,10 @@ const NutritionStyle = styled.div`
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 350px;
 `;
 
 const NutritionPosition = styled.h2`
@@ -18,20 +22,12 @@ const NutritionPosition = styled.h2`
     font-family: 'Times New Roman', Times, serif;
     font-size: 46px;
     font-weight: 700;
-`;
-
-const NutritionBTN = styled.button`
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 26px;
-    font-weight: 700;
-    border-radius: 22px;
-    background-color: aqua;
+    color: white;
 `;
 
 export {
     NutritionStyle,
     NutritionPosition,
-    NutritionBTN
 };
 
 

@@ -1,10 +1,10 @@
 import Contacts from "Components/Contacts/Contacts";
+import BTN from 'Components/BTN/BTN';
 import {
     ScheduleStyle,
     SchedulePosition,
     ScheduleList,
     ScheduleListName,
-    ScheduleListBTN,
     ScheduleName
 } from './Schedule.styled';
 
@@ -16,15 +16,15 @@ const Schedule = () => {
                 <ScheduleList>
                     <div>
                         <ScheduleListName>Kengoo jumps</ScheduleListName>
-                        <ScheduleListBTN>Записатися</ScheduleListBTN>
+                        <BTN type="button" handleChange={''} TextBTN={'Записатися'} />
                     </div>
                     <div>
                         <ScheduleListName>High heels</ScheduleListName>
-                        <ScheduleListBTN>Записатися</ScheduleListBTN>
+                        <BTN type="button" handleChange={''} TextBTN={'Записатися'} />
                     </div>
                     <div>
                         <ScheduleListName>Tabata</ScheduleListName>
-                        <ScheduleListBTN>Записатися</ScheduleListBTN>
+                        <BTN type="button" handleChange={''} TextBTN={'Записатися'} />
                     </div>
                 </ScheduleList>
                 <Contacts/>
