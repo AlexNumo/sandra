@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Close from '../../icons/Close.svg';
-import {clientAPI} from '../../service/axios.config';
+import { clientAPI } from '../../service/axios.config';
+import BTN from 'Components/BTN/BTN';
 import {
     ModalStyle,
     ModalPosition,
@@ -62,7 +63,7 @@ const Modal = ({ handleClose }) => {
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                     />
-                    <button type="button" onClick={fetchAPISend}>Відправити</button>
+                    <BTN type="button" handleChange={fetchAPISend} TextBTN={'Відправити'} />
                 </ModalPosition>
             </ModalFeedBack>
         </ModalStyle>

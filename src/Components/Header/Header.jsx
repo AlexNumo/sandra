@@ -3,9 +3,9 @@ import RegistrationForm from '../RegistrationForm/RegistrationForm';
 import AuthForm from '../AuthForm/AuthForm';
 import "./style.css";
 import { useState } from 'react';
+import BTN from 'Components/BTN/BTN';
 import {
     HeaderPosition,
-    BtnForm,
     HeartPosition,
     Heart
 } from './Header.styled';
@@ -32,8 +32,8 @@ const Header = () => {
             <HeartPosition>
                 <Heart></Heart>
             </HeartPosition>
-            <BtnForm onClick={handleOpenSignUp}>Реєстрація</BtnForm>
-            <BtnForm onClick={handleOpenSignIn}>Авторизація</BtnForm>
+            <BTN type="button" handleChange={handleOpenSignUp} TextBTN={'Реєстрація'} />
+            <BTN type="button" handleChange={handleOpenSignIn} TextBTN={'Авторизація'} />
             <div id="Menu">
                 <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"Menu"} />
                 <div id="page-wrap">

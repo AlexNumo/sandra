@@ -1,119 +1,166 @@
-// import CircleCheck from '../../icons/circle.svg';
+import Header from "Components/Header/Header";
+import Check from '../../icons/check_circle.svg';
+import { useState } from "react";
+import "./style.css";
+import {
+    AbonementStyle,
+    AbonementList,
+    AbonementListStyle,
+    CheckStyle,
+    ChoiceBTN
+} from './Abonnement.styled';
 
 const Abonnement = () => {
+    const [choice, setChoice] = useState('0');
+    const [isActiveSmall, setActiveSmall] = useState(false);
+    const [isActiveMedium, setActiveMedium] = useState(false);
+    const [isActiveBig, setActiveBig] = useState(false);
+
+
+    const ChoiceHandleSmall = (e) => {
+        setChoice(e.target.value);
+        setActiveSmall(!isActiveSmall);
+        if (isActiveMedium === true) {
+            setActiveMedium(false);
+        }
+        if (isActiveBig === true) {
+            setActiveBig(false);
+        }
+    }
+
+    const ChoiceHandleMedium = (e) => {
+        setChoice(e.target.value);
+        setActiveMedium(!isActiveMedium);
+        if (isActiveSmall === true) {
+            setActiveSmall(false);
+        }
+        if (isActiveBig === true) {
+            setActiveBig(false);
+        }
+    }
+
+    const ChoiceHandleBig = (e) => {
+        setChoice(e.target.value);
+        setActiveBig(!isActiveBig);
+        if (isActiveSmall === true) {
+            setActiveSmall(false);
+        }
+        if (isActiveMedium === true) {
+            setActiveMedium(false);
+        }
+    }
+
+
+    console.log(choice);
     return (
         <div>
-            <div
-                // class="price-position"
-            >
-                <h2>Plans Pricing</h2>
-                <p>Whether your time-saving automation needs are large or small, were here to help you scale.</p>
-            </div>
-            <div
-                // class="subscription"
-            >
-                <div
-                    // class="subscription-position"
-                >
-                    <button id="monthly"
-                        // class="subscription-btn active-subscription"
-                    >monthly</button>
-                    <button id="yearly"
-                        // class="subscription-btn"
-                    >yearly</button>
-                </div>
-            </div>
-            {/* <section class="plans">
-        <div class="plans-position">
-            <div id="choose-starter">
-                <div id="starter" class="choose-plan">
-                    <div>
-                        <p class="description"><span id="starter-price" class="description-price">$12</span>/month</p>
-                        <h3 class="description-title">Starter</h3>
-                        <p class="description">Unleash the power of automation.</p>
-                        <ul class="description-list">
-                            <li class="description">
-                                        <img class="circle" src={CircleCheck} alt="check-circle"/>
-                                Multi-step Zaps
-                            </li>
-                            <li class="description">
-                                <img class="circle" src={CircleCheck} alt="check-circle"/>
-                                3 Premium Apps
-                            </li>
-                            <li class="description">
-                                <img class="circle" src={CircleCheck} alt="check-circle"/>
-                                2 Users team
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="choose-btn">Choose plan</button>
-                </div>
-            </div>
-            <div id="choose-professional">
-                <div id="professional" class="choose-plan">
-                    <div>
-                        <p class="description"><span id="professional-price" class="description-price">$36</span>/month</p>
-                        <h3 class="description-title">Professional</h3>
-                        <p class="description">Advanced tools to take your work to the next level.</p>
-                        <ul class="description-list">
-                            <li class="description">
-                                <img class="circle" src={CircleCheck} alt="check-circle"/>
-                                Multi-step Zaps
-                            </li>
-                            <li class="description">
-                                <img class="circle" src={CircleCheck} alt="check-circle"/>
-                                Unlimited Premium Apps
-                            </li>
-                            <li class="description">
-                                <img class="circle" src={CircleCheck} alt="check-circle"/>
-                                50 Users team
-                            </li>
-                            <li class="description">
-                                <img class="circle" src={CircleCheck} alt="check-circle"/>
-                                Shared Workspace
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="choose-btn">Choose plan</button>
-                </div>
-            </div>
-            <div id="choose-company" class="active-background">
-                <div id="company" class="choose-plan active-plan">
-                    <div>
-                        <div class="most-popular">
-                            <p>most popular</p>
-                        </div>
-                        <p class="description"><span id="company-price" class="description-price">$56</span>/month</p>
-                        <h3 class="description-title">Company</h3>
-                        <p class="description">Automation plus enterprise-grade features.</p>
-                        <ul class="description-list">
-                            <li class="description">
-                                <img class="circle" src={CircleCheck} alt="check-circle"/>
-                                Multi-step Zap
-                            </li>
-                            <li class="description">
-                                <img class="circle" src={CircleCheck} alt="check-circle"/>
-                                Unlimited Premium Apps
-                            </li>
-                            <li class="description">
-                                <img class="circle" src={CircleCheck} alt="check-circle"/>
-                                Unlimited Users Team
-                            </li>
-                            <li class="description">
-                                <img class="circle" src={CircleCheck} alt="check-circle"/>
-                                Advanced Admin
-                            </li>
-                            <li class="description">
-                                <img class="circle" src={CircleCheck} alt="check-circle"/>
-                                Custom Data Retention
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="choose-btn">Choose plan</button>
-                </div>
-            </div>
-        </div>
-            </section> */}
+            <Header />
+            <AbonementStyle>
+                <h2>Виберіть кількість занять</h2>
+                <AbonementList>
+                    <AbonementListStyle
+                        className={isActiveSmall ? 'activeChoice' : null}
+                        onClick={ChoiceHandleSmall}
+                        value={6}
+                    >
+                        <h3>6 тренувань на місяць</h3>
+                        <p>800 грн.</p>
+                        <p>
+                            <CheckStyle src={Check} alt="Check" />
+                            Kangoo jumps
+                        </p>
+                        <p>
+                            <CheckStyle src={Check} alt="Check" />
+                            High heels
+                        </p>
+                        <p>
+                            <CheckStyle src={Check} alt="Check" />
+                            Tabata
+                        </p>
+                        <p>
+                            <CheckStyle src={Check} alt="Check" />
+                            Kangoo Jumps Discovery
+                        </p>
+                        <ChoiceBTN
+                            type="button"
+                            value={6}
+                            onClick={ChoiceHandleSmall}
+                            className={isActiveSmall ? 'activeBTN' : null}
+                        >
+                            Обрати
+                        </ChoiceBTN>
+                    </AbonementListStyle>
+                   <AbonementListStyle
+                        className={isActiveMedium ? 'activeChoice' : null}
+                        onClick={ChoiceHandleMedium}
+                        value={8}
+                    >
+                        <h3>8 тренувань на місяць</h3>
+                        <p>1100 грн.</p>
+                        <p>
+                            <CheckStyle src={Check} alt="Check" />
+                            Kangoo jumps
+                        </p>
+                        <p>
+                            <CheckStyle src={Check} alt="Check" />
+                            High heels
+                        </p>
+                        <p>
+                            <CheckStyle src={Check} alt="Check" />
+                            Tabata
+                        </p>
+                        <p>
+                            <CheckStyle src={Check} alt="Check" />
+                            Kangoo Jumps Discovery
+                        </p>
+                        <ChoiceBTN
+                            type="button"
+                            value={8}
+                            onClick={ChoiceHandleMedium}
+                            className={isActiveMedium ? 'activeBTN' : null}
+                        >
+                            Обрати
+                        </ChoiceBTN>
+                    </AbonementListStyle>
+                    <AbonementListStyle
+                        className={isActiveBig ? 'activeChoice' : null}
+                        onClick={ChoiceHandleBig}
+                        value={12}
+                    >
+                        <h3>12 тренувань на місяць</h3>
+                        <p>1300 грн.</p>
+                        <p>
+                            <CheckStyle src={Check} alt="Check" />
+                            Kangoo jumps
+                        </p>
+                        <p>
+                            <CheckStyle src={Check} alt="Check" />
+                            High heels
+                        </p>
+                        <p>
+                            <CheckStyle src={Check} alt="Check" />
+                            Tabata
+                        </p>
+                        <p>
+                            <CheckStyle src={Check} alt="Check" />
+                            Kangoo Jumps Discovery
+                        </p>
+                        <ChoiceBTN
+                            type="button"
+                            value={12}
+                            onClick={ChoiceHandleBig}
+                            className={isActiveBig ? 'activeBTN' : null}
+                        >
+                            Обрати
+                        </ChoiceBTN>
+                    </AbonementListStyle>
+                </AbonementList>
+            {/* <div>
+                <button type="button" value={6} onClick={ChoiceHandle}>6 Занять</button>
+                <button type="button" value={8} onClick={ChoiceHandle}>8 Занять</button>
+                <button type="button" value={12} onClick={ChoiceHandle}>12 Занять</button>
+            </div> */}
+            </AbonementStyle>
         </div>
     )
 };

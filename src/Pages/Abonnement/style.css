@@ -1,0 +1,10 @@
+.activeChoice{
+    color: white !important;
+    background-color: #231D4F !important;
+    border-radius: 22px;
+}
+
+.activeBTN {
+    color: white !important;
+    background-color: #BB6BD9 !important;
+}

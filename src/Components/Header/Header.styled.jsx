@@ -8,11 +8,6 @@ const HeaderPosition = styled.header`
     background-color: #d4b1b1;
 `;
 
-const BtnForm = styled.button`
-    background-color: aqua;
-    border-radius: 22px;
-`;
-
 const HeartPosition = styled.div`
     position: relative;
     top: -8px;
@@ -48,7 +43,6 @@ const Heart = styled.div`
 
 export {
     HeaderPosition,
-    BtnForm,
     HeartPosition,
     Heart
 };

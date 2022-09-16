@@ -24,7 +24,7 @@ const AlbumBTN = styled.button`
     background-size: contain;
     width: 415px;
     height: 300px;
-
+    border: none
 `;
 
 export {

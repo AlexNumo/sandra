@@ -5,6 +5,7 @@ import MainPage from "Components/MainPage/MainPage";
 import Schedule from 'Components/Schedule/Schedule';
 import Nutrition from 'Components/Nutrition/Nutrition';
 import Album from 'Components/Album/Album';
+import Market from 'Components/Market/Market';
 
 import Abonnement from './Pages/Abonnement/Abonnement';
 import Toaster from './Components/Toasts/Toasts';
@@ -13,7 +14,7 @@ function App() {
     <>
       <Suspense fallback={"Downloading..."}>
         <Routes>
-          <Route path='/' element={<><Header /><MainPage /> <Schedule/><Album/><Nutrition/></>} />
+          <Route path='/' element={<><Header /><MainPage /> <Schedule/><Album/><Nutrition/><Market/></>} />
           <Route path='/abonnements' element={<Abonnement /> } /> 
         </Routes>
       </Suspense>

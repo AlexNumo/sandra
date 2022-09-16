@@ -29,15 +29,6 @@ const SevriceText = styled.h2`
     color: white;
 `;
 
-const ServiceBtn = styled.button`
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 35px;
-    background-color: aqua;
-    border-radius: 22px;
-`;
-
 const AbonnementLink = styled(NavLink)`
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
@@ -53,7 +44,6 @@ const AbonnementLink = styled(NavLink)`
 
 export {
     MainPagePosition,
-    ServiceBtn,
     SevriceText,
     ServicePosition,
     AbonnementLink
