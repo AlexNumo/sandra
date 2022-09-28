@@ -10,8 +10,8 @@ export const register = async ({ name, email, password }) => {
       email,
       password,
     });
-    toast.success('Реєстрація успішна');
-    return res;
+    toast.success(`Реєстрація успішна. Вітаємо ${res.data.data.name}`);
+    return res.data;
   } catch (e) {
     if (e.response.status === 409) {
       toast.error(`Ця електронна пошта існує`);
