@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/sandra/static/css/main.0f98b951.css",
-    "main.js": "/sandra/static/js/main.ffe28e1c.js",
+    "main.js": "/sandra/static/js/main.a427b312.js",
+    "static/media/Kengoo-1.jpg": "/sandra/static/media/Kengoo-1.72408558616c0be92d84.jpg",
     "static/media/Nutrition.jpg": "/sandra/static/media/Nutrition.d33525e1edc10735a49d.jpg",
     "static/media/AlbumBCK.jpg": "/sandra/static/media/AlbumBCK.5e48a831da294bcb74a2.jpg",
-    "static/media/Kengoo-1.jpg": "/sandra/static/media/Kengoo-1.fed74eb9e5b6c73bd285.jpg",
     "static/media/bck_img.jpg": "/sandra/static/media/bck_img.6262b91fc019d49f6a77.jpg",
     "static/media/instagram.svg": "/sandra/static/media/instagram.037f612ee43f30bf2c241e293d8abbb6.svg",
     "static/media/check_circle.svg": "/sandra/static/media/check_circle.2ff680da3e7ca34e22b63e6544fc0e25.svg",
@@ -15,10 +15,10 @@
     "static/media/facebook.svg": "/sandra/static/media/facebook.8d9dc950dafd9bf742f16cab1e852ce5.svg",
     "static/media/menu.svg": "/sandra/static/media/menu.22926747132daf8f955df3c257085e8f.svg",
     "main.0f98b951.css.map": "/sandra/static/css/main.0f98b951.css.map",
-    "main.ffe28e1c.js.map": "/sandra/static/js/main.ffe28e1c.js.map"
+    "main.a427b312.js.map": "/sandra/static/js/main.a427b312.js.map"
   },
   "entrypoints": [
     "static/css/main.0f98b951.css",
-    "static/js/main.ffe28e1c.js"
+    "static/js/main.a427b312.js"
   ]
 }
