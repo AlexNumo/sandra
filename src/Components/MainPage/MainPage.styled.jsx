@@ -9,6 +9,7 @@ const MainPagePosition = styled.div`
     background-image: url('${BackImgKengoo}');
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: cover;
     margin-left: auto;
     margin-right: auto;
     /* margin-bottom: 20px; */
