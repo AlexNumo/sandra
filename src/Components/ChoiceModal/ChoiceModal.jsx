@@ -1,8 +1,6 @@
 import { useEffect } from 'react';
-
-import Button from '../Button';
+import BTN from '../BTN/BTN';
 import CloseBtn from '../CloseBtn/CloseBtn';
-
 import {
   Overlay,
   ModalDiv,
@@ -60,23 +58,18 @@ function ChoiceModal({ text, choiceHandler, closeModalHandle, subText }) {
         <CloseModalBtn>
           <CloseBtn onHandleClick={closeModal} />
         </CloseModalBtn>
-
         <ContentWrap>
           <ModalTtl>Ви впевнені, {text}?</ModalTtl>
-
           <Text>{subText}</Text>
-
           <BtnWrapper>
-            <Button
-              // style={{ backgroundColor: 'red' }}
-              onClickHandler={onCancelClickHandle}
-              btnText="Скасувати"
+            <BTN
+              handleChange={onCancelClickHandle}
+              TextBTN="Скасувати"
               autofocus={true}
             />
-            <Button
-              // style={{ backgraund: "red" }}
-              onClickHandler={onOkClickHandle}
-              btnText="Підтвердити"
+            <BTN
+              handleChange={onOkClickHandle}
+              TextBTN="Підтвердити"
               autofocus={false}
             />
           </BtnWrapper>

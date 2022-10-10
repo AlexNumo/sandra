@@ -36,9 +36,9 @@ const Header = () => {
         navigate('/', { replace: true });
       });
     }
-  };
-
+    };
     const userName = useSelector(authSelectors.getUserName);
+    console.log("userName: ", userName);
     const NotLog = () => {
         return (
             <>

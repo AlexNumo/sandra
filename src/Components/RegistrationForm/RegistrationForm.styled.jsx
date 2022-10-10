@@ -28,16 +28,6 @@ export const CloseBtnPosition = styled.div`
     justify-content: flex-end;
     padding-top: 15px;
 `;
-export const CloseBtn = styled.button`
-    background: none;
-    border: none;
-    width: auto;
-    margin-top: 5px;
-    margin-right: 5px;
-`;
-export const CloseImg = styled.img`
-    width: 18px;
-`;
 export const TitleRegistr = styled.h2`
   color: rgba(252, 132, 45, 1);
   text-transform: uppercase;

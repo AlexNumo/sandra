@@ -41,7 +41,8 @@ export const login = async ({ email, password }) => {
 export const logout = async () => {
   try {
     const res = await instanceClientAPI.get(`/users/logout`);
-    return res;
+    // return res;
+    return console.log(res);
   } catch (error) {
     toast.error('Упс, щось пішло не так');
     console.error(error.message);
