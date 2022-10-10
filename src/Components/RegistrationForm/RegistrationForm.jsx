@@ -2,17 +2,14 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useFormik } from 'formik';
 import { useNavigate } from 'react-router-dom';
-import Close from '../../icons/Close.svg';
 import * as Yup from 'yup';
-
+import CloseBtn from '../CloseBtn/CloseBtn';
 import { authOperations } from '../../redux/app/auth';
 
 import {
   ContainerRegistr,
   TitleRegistr,
   CloseBtnPosition,
-  CloseBtn,
-  CloseImg,
   FormRegistr,
   FormRegistrList,
   FormRegistrItem,
@@ -68,8 +65,6 @@ const RegistrationForm = ({handleClose}) => {
         .max(100, 'Максимум 100 символів')
         .matches(
           /(?=.*[0-9])(?=.*[a-z])[0-9a-zA-Z]{8,}/,
-          // .matches(
-          //   /(?=.*[0-9])(?=.*[a-z]{8,})/,
           'Пароль повинен складатися з латинських літер та цифр без спеціальних символів',
         )
         .required("Обов'язково"),
@@ -81,6 +76,7 @@ const RegistrationForm = ({handleClose}) => {
         ({ payload }) => {
           if (payload?.code === 201) {
             navigate('/', { replace: true });
+            handleClose();
           }
         },
       );
@@ -93,9 +89,7 @@ const RegistrationForm = ({handleClose}) => {
             <ContainerRegistr>
                 <ContainerRegistrStyle>
                     <CloseBtnPosition>
-                        <CloseBtn onClick={handleClose}>
-                            <CloseImg src={Close} alt="Close"/>
-                        </CloseBtn>
+                      <CloseBtn onHandleClick={handleClose} />
                     </CloseBtnPosition>
                     <TitleRegistr>Реєстрація</TitleRegistr>
                     <FormRegistr onSubmit={formik.handleSubmit}>

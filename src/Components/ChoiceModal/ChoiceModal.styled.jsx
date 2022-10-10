@@ -15,7 +15,7 @@ const Overlay = styled.div`
 
 const ModalDiv = styled.div`
   position: relative;
-  background-color: var(--white);
+  background-color: white;
   width: 672px;
   padding: 64px 80px 80px;
   padding-bottom: 80px;
@@ -28,7 +28,6 @@ const ContentWrap = styled.div`
 `;
 
 const BtnWrapper = styled.div`
-  width: 210px;
   display: flex;
   flex-direction: column;
 

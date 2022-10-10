@@ -15,19 +15,19 @@ const actionRegister = createAsyncThunk(
 );
 
 const actionLogin = createAsyncThunk(
-  'auth/login',
+  'auth/signin',
   async (payload, thunkAPI) => {
     try {
       const { data } = await clientAPI.login(payload);
-      tokenService.setLocalTokens(data.data.tokens);
-      return data.data;
+      tokenService.setLocalTokens(data.token);
+      return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data);
     }
   },
 );
 
-const actionLogout = createAsyncThunk('auth/loout', async (_, thunkAPI) => {
+const actionLogout = createAsyncThunk('auth/logout', async (_, thunkAPI) => {
   try {
     await clientAPI.logout();
     tokenService.removeLocalTokens();
@@ -41,7 +41,7 @@ export const actionCurrent = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const { data } = await clientAPI.current();
-      return data.data;
+      return data;
     } catch (err) {
       return rejectWithValue(err.response.data);
     }

@@ -5,7 +5,7 @@ const initialState = {
   name: null,
   email: null,
   userInfo: null,
-  tokens: null,
+  token: null,
   isLoggedIn: false,
   isFetchingUser: false,
   isError: false,
@@ -20,7 +20,7 @@ export const authSlice = createSlice({
 
   reducers: {
     refreshToken: (state, action) => {
-      state.tokens = action.payload;
+      state.token = action.payload;
     },
 
     reset: state => {
@@ -58,12 +58,13 @@ export const authSlice = createSlice({
       state.isError = false;
     },
     [authOperations.actionLogin.fulfilled](state, action) {
-      state.isLoading = false;
       state.name = action.payload.name;
-      state.tokens = action.payload.tokens;
+      // state.tokens = action.token;
+      state.isLoading = false;
       state.isLoggedIn = true;
       state.isSuccess = false;
       state.isError = false;
+      // console.log("action.payload.name: ", action.payload.name);
     },
     [authOperations.actionLogin.rejected](state, action) {
       state.isLoading = false;
@@ -116,5 +117,7 @@ export const authSlice = createSlice({
     },
   },
 });
+
+
 
 export const { login, logout, reset, advice, refreshToken } = authSlice.actions;
