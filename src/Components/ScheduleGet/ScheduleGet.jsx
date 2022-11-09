@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
 import ScheduleTable from '../ScheduleTable/ScheduleTable';
-import {clientAPI} from '../service/axios.config';
+import {clientAPI} from '../../service/axios.config';
 import {PositionTable} from './ScheduleGet.styled';
 
 function ScheduleGet() {

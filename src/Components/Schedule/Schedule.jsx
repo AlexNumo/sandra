@@ -1,6 +1,6 @@
 import Table from 'react-bootstrap/Table';
 import OptionsClick from '../OptionsClick/OptionsClick';
-import { sendData } from '../service/axios.config';
+import {clientAPI} from '../../service/axios.config';
 import {PositionTable} from './Schedule.styled';
 
 function Schedule() {  
@@ -10,7 +10,7 @@ function Schedule() {
     const timeTrainee = e.nativeEvent.path[2].attributes.id.value;
     const dayTrainee = e.nativeEvent.path[1].attributes[0].nodeValue;
     const dayTime = dayTrainee + timeTrainee;
-    const apiSend = () => (sendData({ id: dayTime, day: dayTrainee, time: timeTrainee, kind_trainee: event }));
+    const apiSend = () => (clientAPI.sendData({ id: dayTime, day: dayTrainee, time: timeTrainee, kind_trainee: event }));
     if (dayTime === 'monday0900') {
       apiSend();
     }
