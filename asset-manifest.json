@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sandra/static/css/main.0c113c9e.css",
-    "main.js": "/sandra/static/js/main.c3aaecc9.js",
+    "main.js": "/sandra/static/js/main.8f7dbcf7.js",
     "static/media/Nutrition.jpg": "/sandra/static/media/Nutrition.d33525e1edc10735a49d.jpg",
     "static/media/DE0A7082.jpg": "/sandra/static/media/DE0A7082.fec178d383374094cd14.jpg",
     "static/media/DE0A6232.jpg": "/sandra/static/media/DE0A6232.4af28d75bee6e8252c76.jpg",
@@ -12,10 +12,10 @@
     "index.html": "/sandra/index.html",
     "static/media/menu.svg": "/sandra/static/media/menu.22926747132daf8f955df3c257085e8f.svg",
     "main.0c113c9e.css.map": "/sandra/static/css/main.0c113c9e.css.map",
-    "main.c3aaecc9.js.map": "/sandra/static/js/main.c3aaecc9.js.map"
+    "main.8f7dbcf7.js.map": "/sandra/static/js/main.8f7dbcf7.js.map"
   },
   "entrypoints": [
     "static/css/main.0c113c9e.css",
-    "static/js/main.c3aaecc9.js"
+    "static/js/main.8f7dbcf7.js"
   ]
 }
