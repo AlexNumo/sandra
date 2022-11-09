@@ -1,26 +1,21 @@
 {
   "files": {
     "main.css": "/sandra/static/css/main.0c113c9e.css",
-    "main.js": "/sandra/static/js/main.bd6d4bb6.js",
-    "static/media/Kengoo-1.jpg": "/sandra/static/media/Kengoo-1.72408558616c0be92d84.jpg",
+    "main.js": "/sandra/static/js/main.2955c181.js",
     "static/media/Nutrition.jpg": "/sandra/static/media/Nutrition.d33525e1edc10735a49d.jpg",
     "static/media/DE0A7082.jpg": "/sandra/static/media/DE0A7082.fec178d383374094cd14.jpg",
     "static/media/DE0A6232.jpg": "/sandra/static/media/DE0A6232.4af28d75bee6e8252c76.jpg",
     "static/media/DE0A6721.jpg": "/sandra/static/media/DE0A6721.24401234dbb6f52fbc4c.jpg",
     "static/media/DE0A7179.jpg": "/sandra/static/media/DE0A7179.c78fe4a2ea6db59ad1bb.jpg",
     "static/media/DE0A6975.jpg": "/sandra/static/media/DE0A6975.a52bd797d8a05d68e092.jpg",
-    "static/media/instagram.svg": "/sandra/static/media/instagram.037f612ee43f30bf2c241e293d8abbb6.svg",
     "static/media/check_circle.svg": "/sandra/static/media/check_circle.2ff680da3e7ca34e22b63e6544fc0e25.svg",
     "index.html": "/sandra/index.html",
-    "static/media/location.svg": "/sandra/static/media/location.9f9a9e70e9345dea6c7c33f72254d834.svg",
-    "static/media/phone.svg": "/sandra/static/media/phone.55638d8fbbb370fccf36b875b7162233.svg",
-    "static/media/facebook.svg": "/sandra/static/media/facebook.8d9dc950dafd9bf742f16cab1e852ce5.svg",
     "static/media/menu.svg": "/sandra/static/media/menu.22926747132daf8f955df3c257085e8f.svg",
     "main.0c113c9e.css.map": "/sandra/static/css/main.0c113c9e.css.map",
-    "main.bd6d4bb6.js.map": "/sandra/static/js/main.bd6d4bb6.js.map"
+    "main.2955c181.js.map": "/sandra/static/js/main.2955c181.js.map"
   },
   "entrypoints": [
     "static/css/main.0c113c9e.css",
-    "static/js/main.bd6d4bb6.js"
+    "static/js/main.2955c181.js"
   ]
 }
