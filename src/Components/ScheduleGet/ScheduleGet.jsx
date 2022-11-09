@@ -2,7 +2,11 @@ import { useState, useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
 import ScheduleTable from '../ScheduleTable/ScheduleTable';
 import {clientAPI} from '../../service/axios.config';
-import {PositionTable} from './ScheduleGet.styled';
+import {
+  PositionTable, 
+  ScheduleLink
+} from './ScheduleGet.styled';
+
 
 function ScheduleGet() {
   const [data0900, setData0900] = useState([]);
@@ -269,6 +273,7 @@ function ScheduleGet() {
         />
       </tbody>
       </Table>
+      <ScheduleLink to='/schedule'>Змінити</ScheduleLink>
     </PositionTable>
   );
 }

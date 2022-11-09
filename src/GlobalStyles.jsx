@@ -116,10 +116,12 @@ input[type=number]{
 .time{
   background-color: #8080ff;
   margin-right: 10px;
+  width: 50px;
 }
 
 .select{
   background-color: inherit;
+  width: 100%;
 }
 `;
 
