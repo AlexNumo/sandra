@@ -20,7 +20,7 @@ const Album = () => {
   return (
     <AlbumPosition>
       <Carousel
-        width={window.innerWidth}
+        width={'99vw'}
         showThumbs={false}
         infiniteLoop={true}
         autoPlay

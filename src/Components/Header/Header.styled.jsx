@@ -44,5 +44,5 @@ const Heart = styled.div`
 export {
     HeaderPosition,
     HeartPosition,
-    Heart
+    Heart,
 };

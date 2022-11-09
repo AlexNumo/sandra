@@ -54,11 +54,11 @@ const Header = () => {
                 <BTN type="button" TextBTN={`${userName}`} />
                 <BTN type="button" handleChange={handleLogout} TextBTN={'Вихід'} />
                 {isShowChoiceModal && (
-                    <ChoiceModal
-                    text={'що хочете вийти зі свого облікового запису'}
-                    choiceHandler={choiceHandler}
-                    closeModalHandle={closeModalHandle}
-        />
+                        <ChoiceModal
+                        text={'що хочете вийти зі свого облікового запису'}
+                        choiceHandler={choiceHandler}
+                        closeModalHandle={closeModalHandle}
+                        />
       )}
             </>
         )
@@ -91,44 +91,8 @@ const Header = () => {
             {openSignUp ? <RegistrationForm handleClose={handleCloseSignUp} /> : null}
             {openSignIn ? <AuthForm handleClose={handleCloseSignIn} /> : null}
 
-
         </HeaderPosition>
     )
 }
 
 export default Header;
-
-// // import "./styles.css";
-// import { useState } from "react";
-// import { useSelector, useDispatch } from "react-redux";
-// import { getTodoAsync, addTodoAsync, showTodo } from "../../redux/rootReducer";
-
-// export default function App() {
-//   const todo = useSelector(showTodo);
-//   const dispatch = useDispatch();
-//   const [newTodo, setNewTodo] = useState({
-//     userId: 69,
-//     id: 69,
-//     title: "",
-//     completed: false
-//   });
-
-//   const addNewTodo = () => {
-//     dispatch(addTodoAsync(newTodo));
-//   };
-
-//   return (
-//     <div className="App">
-//       <h1>Hello CodeSandbox</h1>
-//       <h2>Start editing to see some magic happen!</h2>
-//       <input
-//         onChange={(e) => setNewTodo({ ...newTodo, title: e.target.value })}
-//       />
-//       <button onClick={addNewTodo}>Add new todo</button>
-//       {todo.map((item) => {
-//         return <p key={item.id}>{item.title}</p>;
-//       })}
-//       <button onClick={() => dispatch(getTodoAsync("5"))}>GET TODO</button>
-//     </div>
-//   );
-// }

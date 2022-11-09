@@ -13,7 +13,7 @@ const NutritionStyle = styled.div`
     background-size: contain;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width: 300px;
     height: 350px;
 `;
 

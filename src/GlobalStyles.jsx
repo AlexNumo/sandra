@@ -85,6 +85,42 @@ input[type=number]{
     -moz-appearance: textfield;
 }
 
+.monday {
+  background-color: #b3ffb3;
+}
+
+.tuesday {
+  background-color: #ffb3d9;
+}
+
+.wednesday {
+  background-color: #ffffb3;
+}
+
+.thursday {
+  background-color: #b3d9ff;
+}
+
+.friday {
+  background-color: #e6b3b3;
+}
+
+.saturday {
+  background-color: #ffb3ff;
+}
+
+.sunday {
+  background-color: #99ffff;
+}
+
+.time{
+  background-color: #8080ff;
+  margin-right: 10px;
+}
+
+.select{
+  background-color: inherit;
+}
 `;
 
 export default GlobalStyle;

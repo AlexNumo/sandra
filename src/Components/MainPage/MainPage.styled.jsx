@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-// import BackImg from '../../icons/bck_img.jpg';
-import BackImgKengoo from '../../icons/Kengoo-1.jpg';
+import BackImgKengoo from "../../icons/picture/DE0A7082.jpg";
 import { NavLink } from "react-router-dom";
 
 const MainPagePosition = styled.div`
-    width: 100%;
+    width: 100vw;
     height: 400px;
     background-image: url('${BackImgKengoo}');
     background-repeat: no-repeat;
@@ -12,7 +11,6 @@ const MainPagePosition = styled.div`
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    /* margin-bottom: 20px; */
 `;
 
 const ServicePosition = styled.div`
