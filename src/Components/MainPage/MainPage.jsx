@@ -5,7 +5,7 @@ import {
     MainPagePosition,
     SevriceText,
     ServicePosition,
-    AbonnementLink
+    // AbonnementLink
 } from './MainPage.styled';
 import { Link } from "react-router-dom";
 
