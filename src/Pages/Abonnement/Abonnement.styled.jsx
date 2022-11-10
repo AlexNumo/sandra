@@ -38,6 +38,7 @@ const ChoiceBTN = styled.span`
     border-radius: 22px;
     background-color: #231D4F;
     width: 100%;
+    color: #ffffff;
 `;
 
 

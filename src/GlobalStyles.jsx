@@ -94,7 +94,7 @@ input[type=number]{
 }
 
 .wednesday {
-  background-color: #ffffb3;
+  background-color: #ff00ff;
 }
 
 .thursday {

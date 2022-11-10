@@ -6,6 +6,7 @@ import {PositionTable} from './Schedule.styled';
 function Schedule() {  
 
   const ClickOption = (e) => {
+    // console.log(e);
     const event = e.target.value;
     const timeTrainee = e.nativeEvent.path[2].attributes.id.value;
     const dayTrainee = e.nativeEvent.path[1].attributes[0].nodeValue;

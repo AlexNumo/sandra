@@ -10,7 +10,7 @@ const Market = () => {
         <MarketStyle>
             <MarketName>Магазин</MarketName>
             <MarketList>
-                <BTN type="button" handleChange={''} TextBTN={'Власні Kengoo Jumps'} />
+                <BTN type="button" handleChange={''} TextBTN={'Власні Kangoo Jumps'} />
                 <BTN type="button" handleChange={''} TextBTN={'Все для танців High heels'} />
                 <BTN type="button" handleChange={''} TextBTN={'Одяг для фітнесу'} />
                 <BTN type="button" handleChange={''} TextBTN={'Аксесуари'} />

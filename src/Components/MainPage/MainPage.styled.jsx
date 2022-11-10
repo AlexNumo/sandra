@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import BackImgKengoo from "../../icons/picture/DE0A7082.jpg";
+import BackImgKangoo from "../../icons/picture/DE0A7082.jpg";
 import { NavLink } from "react-router-dom";
 
 const MainPagePosition = styled.div`
     width: 100vw;
     height: 400px;
-    background-image: url('${BackImgKengoo}');
+    background-image: url('${BackImgKangoo}');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;

@@ -6,6 +6,7 @@ import {
   PositionTable, 
   ScheduleLink
 } from './ScheduleGet.styled';
+import { Link } from 'react-router-dom';
 
 
 function ScheduleGet() {
@@ -273,7 +274,7 @@ function ScheduleGet() {
         />
       </tbody>
       </Table>
-      <ScheduleLink to='/schedule'>Змінити</ScheduleLink>
+      <Link to='schedule'>Змінити</Link>
     </PositionTable>
   );
 }

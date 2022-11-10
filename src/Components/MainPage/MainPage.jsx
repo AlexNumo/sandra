@@ -7,6 +7,7 @@ import {
     ServicePosition,
     AbonnementLink
 } from './MainPage.styled';
+import { Link } from "react-router-dom";
 
 const MainPage = () => {
     const [open, setOpen] = useState(false);
@@ -23,7 +24,7 @@ const MainPage = () => {
             <ServicePosition>
             <SevriceText>ARS FIT studio</SevriceText>
                 <BTN type="button" handleChange={handleOpen} TextBTN={'Записуйся'} />
-                <AbonnementLink to='/abonnements'>Абонементи</AbonnementLink>
+                <Link to='abonnements'>Абонементи</Link>
             </ServicePosition>
             {open ? <Modal handleClose={handleClose} /> : null}
         </MainPagePosition>
