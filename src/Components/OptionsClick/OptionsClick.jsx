@@ -59,9 +59,8 @@ const OptionsClick = ({ClickOption}) => {
               key={weekDay.id}
               id={weekDay.id}
               className={weekDay.id}
-              onChange={ClickOption}
             >
-              <select className='select'>
+              <select className='select' onChange={ClickOption}>
                 {options.map(option => (
                   <option
                     key={option.id}
