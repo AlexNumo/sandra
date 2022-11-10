@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sandra/static/css/main.8a20b806.css",
-    "main.js": "/sandra/static/js/main.43866740.js",
+    "main.js": "/sandra/static/js/main.cd849f08.js",
     "Header.css": "/sandra/static/css/Header.96838fcc.chunk.css",
     "MainPage.js": "/sandra/static/js/MainPage.fc757d7a.chunk.js",
     "Schedule.js": "/sandra/static/js/Schedule.c401c810.chunk.js",
@@ -25,7 +25,7 @@
     "index.html": "/sandra/index.html",
     "static/media/menu.svg": "/sandra/static/media/menu.22926747132daf8f955df3c257085e8f.svg",
     "main.8a20b806.css.map": "/sandra/static/css/main.8a20b806.css.map",
-    "main.43866740.js.map": "/sandra/static/js/main.43866740.js.map",
+    "main.cd849f08.js.map": "/sandra/static/js/main.cd849f08.js.map",
     "Header.96838fcc.chunk.css.map": "/sandra/static/css/Header.96838fcc.chunk.css.map",
     "MainPage.fc757d7a.chunk.js.map": "/sandra/static/js/MainPage.fc757d7a.chunk.js.map",
     "Schedule.c401c810.chunk.js.map": "/sandra/static/js/Schedule.c401c810.chunk.js.map",
@@ -43,6 +43,6 @@
   },
   "entrypoints": [
     "static/css/main.8a20b806.css",
-    "static/js/main.43866740.js"
+    "static/js/main.cd849f08.js"
   ]
 }
