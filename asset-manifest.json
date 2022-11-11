@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/sandra/static/css/main.8a20b806.css",
-    "main.js": "/sandra/static/js/main.cd849f08.js",
+    "main.js": "/sandra/static/js/main.37ff5030.js",
     "Header.css": "/sandra/static/css/Header.96838fcc.chunk.css",
-    "MainPage.js": "/sandra/static/js/MainPage.fc757d7a.chunk.js",
+    "MainPage.js": "/sandra/static/js/MainPage.86abcf4e.chunk.js",
     "Schedule.js": "/sandra/static/js/Schedule.c401c810.chunk.js",
-    "ScheduleGet.js": "/sandra/static/js/ScheduleGet.5438e357.chunk.js",
+    "ScheduleGet.js": "/sandra/static/js/ScheduleGet.46cc471b.chunk.js",
     "Album.css": "/sandra/static/css/Album.ce235a17.chunk.css",
     "Album.js": "/sandra/static/js/Album.8cb2f4d5.chunk.js",
     "Market.js": "/sandra/static/js/Market.465e64ad.chunk.js",
@@ -14,6 +14,7 @@
     "Toasts.js": "/sandra/static/js/Toasts.958307bf.chunk.js",
     "static/js/163.64fbd389.chunk.js": "/sandra/static/js/163.64fbd389.chunk.js",
     "static/js/238.0254d292.chunk.js": "/sandra/static/js/238.0254d292.chunk.js",
+    "static/js/845.914e7ace.chunk.js": "/sandra/static/js/845.914e7ace.chunk.js",
     "static/js/896.05e8e7e2.chunk.js": "/sandra/static/js/896.05e8e7e2.chunk.js",
     "static/js/894.d5186864.chunk.js": "/sandra/static/js/894.d5186864.chunk.js",
     "static/media/DE0A7082.jpg": "/sandra/static/media/DE0A7082.fec178d383374094cd14.jpg",
@@ -25,11 +26,11 @@
     "index.html": "/sandra/index.html",
     "static/media/menu.svg": "/sandra/static/media/menu.22926747132daf8f955df3c257085e8f.svg",
     "main.8a20b806.css.map": "/sandra/static/css/main.8a20b806.css.map",
-    "main.cd849f08.js.map": "/sandra/static/js/main.cd849f08.js.map",
+    "main.37ff5030.js.map": "/sandra/static/js/main.37ff5030.js.map",
     "Header.96838fcc.chunk.css.map": "/sandra/static/css/Header.96838fcc.chunk.css.map",
-    "MainPage.fc757d7a.chunk.js.map": "/sandra/static/js/MainPage.fc757d7a.chunk.js.map",
+    "MainPage.86abcf4e.chunk.js.map": "/sandra/static/js/MainPage.86abcf4e.chunk.js.map",
     "Schedule.c401c810.chunk.js.map": "/sandra/static/js/Schedule.c401c810.chunk.js.map",
-    "ScheduleGet.5438e357.chunk.js.map": "/sandra/static/js/ScheduleGet.5438e357.chunk.js.map",
+    "ScheduleGet.46cc471b.chunk.js.map": "/sandra/static/js/ScheduleGet.46cc471b.chunk.js.map",
     "Album.ce235a17.chunk.css.map": "/sandra/static/css/Album.ce235a17.chunk.css.map",
     "Album.8cb2f4d5.chunk.js.map": "/sandra/static/js/Album.8cb2f4d5.chunk.js.map",
     "Market.465e64ad.chunk.js.map": "/sandra/static/js/Market.465e64ad.chunk.js.map",
@@ -38,11 +39,12 @@
     "Toasts.958307bf.chunk.js.map": "/sandra/static/js/Toasts.958307bf.chunk.js.map",
     "163.64fbd389.chunk.js.map": "/sandra/static/js/163.64fbd389.chunk.js.map",
     "238.0254d292.chunk.js.map": "/sandra/static/js/238.0254d292.chunk.js.map",
+    "845.914e7ace.chunk.js.map": "/sandra/static/js/845.914e7ace.chunk.js.map",
     "896.05e8e7e2.chunk.js.map": "/sandra/static/js/896.05e8e7e2.chunk.js.map",
     "894.d5186864.chunk.js.map": "/sandra/static/js/894.d5186864.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8a20b806.css",
-    "static/js/main.cd849f08.js"
+    "static/js/main.37ff5030.js"
   ]
 }
