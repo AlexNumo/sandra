@@ -3,11 +3,14 @@ import { useState } from "react";
 import BTN from 'Components/BTN/BTN';
 import {
     MainPagePosition,
+    WrapperText,
     SevriceText,
+    SevriceTextBy,
     ServicePosition,
-    // AbonnementLink
+    AbonnementLink,
+    FlashDiv
 } from './MainPage.styled';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const MainPage = () => {
     const [open, setOpen] = useState(false);
@@ -22,9 +25,12 @@ const MainPage = () => {
     return (
         <MainPagePosition>
             <ServicePosition>
-            <SevriceText>ARS FIT studio</SevriceText>
+            <WrapperText>
+                <SevriceText>ARS FIT studio</SevriceText>
+            </WrapperText>
+                <SevriceTextBy>by sandrochka_strong</SevriceTextBy>
                 <BTN type="button" handleChange={handleOpen} TextBTN={'Записуйся'} />
-                <Link to='abonnements'>Абонементи</Link>
+                <FlashDiv><AbonnementLink to='abonnements'>Абонементи</AbonnementLink></FlashDiv>
             </ServicePosition>
             {open ? <Modal handleClose={handleClose} /> : null}
         </MainPagePosition>

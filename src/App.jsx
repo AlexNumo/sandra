@@ -8,6 +8,8 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 // import Market from 'Components/Market/Market';
 // import Abonnement from './Pages/Abonnement/Abonnement';
 // import Toaster from './Components/Toasts/Toasts';
+// import TEST from './Components/TEST/TEST';
+
 const Header = lazy(() => import('./Components/Header/Header.jsx' /* webpackChunkName: "Header"*/));
 const MainPage = lazy(() => import('./Components/MainPage/MainPage.jsx' /* webpackChunkName: "MainPage"*/));
 const Schedule = lazy(() => import('./Components/Schedule/Schedule.jsx' /* webpackChunkName: "Schedule"*/));
@@ -22,9 +24,8 @@ function App() {
     <>
       <Suspense fallback={<h1>"Downloading..."</h1>}>
         <Routes>
-          <Route exact path='/' element={<><Header /><MainPage /><ScheduleGet /><Album /><Market /></>}>
-            
-            </Route>
+          {/* <Route path='/' element={TEST}></Route> */}
+          <Route exact path='/' element={<><Header /><MainPage /><ScheduleGet /><Album /><Market /></>}/>
           <Route path='/abonnements' element={<Abonnement /> } />
           <Route path='/schedule' element={<><Schedule /><ScheduleGet/></> } />
           <Route path="*" element={<Navigate to="/" />} />
