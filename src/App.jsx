@@ -24,11 +24,12 @@ function App() {
     <>
       <Suspense fallback={<h1>"Downloading..."</h1>}>
         <Routes>
-          {/* <Route path='/' element={TEST}></Route> */}
-          <Route exact path='/' element={<><Header /><MainPage /><ScheduleGet /><Album /><Market /></>}/>
-          <Route path='/abonnements' element={<Abonnement /> } />
-          <Route path='/schedule' element={<><Schedule /><ScheduleGet/></> } />
+          <Route exact path='/' element={<><Header /><MainPage /><ScheduleGet /><Album /><Market /></>}>
+            <Route path='/abonnements' element={<Abonnement /> } />
+            <Route path='/schedule' element={<><Schedule /><ScheduleGet /></>} />
+          </Route>
           <Route path="*" element={<Navigate to="/" />} />
+          
         </Routes>
       </Suspense>
       <Toaster />
