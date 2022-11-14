@@ -24,10 +24,9 @@ function App() {
     <>
       <Suspense fallback={<h1>"Downloading..."</h1>}>
         <Routes>
-          <Route exact path='/' element={<><Header /><MainPage /><ScheduleGet /><Album /><Market /></>}>
-            <Route path='/abonnements' element={<Abonnement /> } />
-            <Route path='/schedule' element={<><Schedule /><ScheduleGet /></>} />
-          </Route>
+          <Route exact path='/' element={<><Header /><MainPage /><ScheduleGet /><Album /><Market /></>}/>
+          <Route path='/abonnements' element={<Abonnement /> } />
+          <Route path='/schedule' element={<><Schedule /><ScheduleGet /></>} />
           <Route path="*" element={<Navigate to="/" />} />
           
         </Routes>
