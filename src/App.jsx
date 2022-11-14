@@ -1,5 +1,9 @@
 import { Suspense, lazy } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import {
+  Routes,
+  Route,
+  // Navigate
+} from 'react-router-dom';
 // import Header from "./Components/Header/Header";
 // import MainPage from "Components/MainPage/MainPage";
 // import ScheduleGet from 'Components/ScheduleGet/ScheduleGet';
