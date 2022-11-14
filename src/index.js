@@ -9,7 +9,7 @@ import GlobalStyle from 'GlobalStyles';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/sandra/">
+    <BrowserRouter>
       <GlobalStyle />
       <Provider store={store}>
         <App />
