@@ -60,10 +60,23 @@ export const getUsersAdvice = createAsyncThunk(
   },
 );
 
+export const actionGetDataAll = createAsyncThunk(
+  'auth/getDataAll',
+  async (_, { rejectWithValue }) => {
+    try {
+      const data = await clientAPI.getDataALL();
+      return data;
+    } catch (error) {
+      console.log(error.message);
+    }
+  },
+);
+
 export const authOperations = {
   actionRegister,
   actionCurrent,
   actionLogin,
   actionLogout,
   getUsersAdvice,
+  actionGetDataAll,
 };

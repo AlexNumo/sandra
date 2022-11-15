@@ -6,6 +6,11 @@ const initialState = {
   email: null,
   userInfo: null,
   token: null,
+  id: null,
+  day: null,
+  time: null,
+  kind_trainee: null,
+  date: null,
   isLoggedIn: false,
   isFetchingUser: false,
   isError: false,
@@ -111,6 +116,25 @@ export const authSlice = createSlice({
       state.isLoggedIn = false;
     },
     [authOperations.actionLogout.rejected](state, action) {
+      state.isLoading = false;
+      state.isError = true;
+      state.isSuccess = false;
+    },
+        // getDataAll
+    [authOperations.actionGetDataAll.pending](state) {
+      state.isLoading = true;
+      state.isSuccess = false;
+      state.isError = false;
+    },
+    [authOperations.actionGetDataAll.fulfilled](state, action) {
+      // state.name = action.name;
+      // console.log("action: ", action.payload.name);
+      state.email = null;
+      state.tokens = null;
+      state.isLoading = false;
+      state.isLoggedIn = false;
+    },
+    [authOperations.actionGetDataAll.rejected](state, action) {
       state.isLoading = false;
       state.isError = true;
       state.isSuccess = false;

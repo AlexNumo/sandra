@@ -1,9 +1,23 @@
 import Table from 'react-bootstrap/Table';
 import OptionsClick from '../OptionsClick/OptionsClick';
 import {clientAPI} from '../../service/axios.config';
-import {PositionTable} from './Schedule.styled';
+import { PositionTable } from './Schedule.styled';
+import { useSelector, useDispatch } from "react-redux";
+import { authSelectors } from '../../redux/app/auth';
+import { authOperations } from '../../redux/app/auth';
 
 function Schedule() {  
+  const dispatch = useDispatch();
+  // const Test = useSelector(authSelectors.sendData);
+  // console.log("Test: ", Test);
+  const choiceHandler = (answer) => {
+    dispatch(authOperations.actionGetDataAll()).then(() => {
+      console.log("answer: ", answer);
+    });
+  };
+  const Test2 = useSelector(authOperations.actionGetDataAll);
+  // console.log("Test2: ", Test2);
+  choiceHandler();
 
   const ClickOption = (e) => {
     // console.log(e);

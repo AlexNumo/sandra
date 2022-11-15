@@ -79,6 +79,7 @@ export const ModalStyle = styled.div`
     background-color: #ec63cf8d;
     width: 100%;
     height: 100%;
+    z-index: 100;
 `;
 
 export const ContainerRegistr = styled.div`

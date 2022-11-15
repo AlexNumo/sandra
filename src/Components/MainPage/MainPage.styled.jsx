@@ -107,6 +107,7 @@ const AbonnementLink = styled(NavLink)`
 
 const FlashDiv = styled.div`
     animation: 5s ${bounceAnimation} infinite;
+    z-index: 50;
 `
 
 

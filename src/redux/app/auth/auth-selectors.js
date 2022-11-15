@@ -10,6 +10,8 @@ const getUserInfo = state => state.auth.user.userInfo;
 const getUserAdviceCalorie = state => state.auth.user.userDailyCalorieIntake;
 const getUserNotRecommendProd = state =>
   state.auth.user.userNotRecommendedProducts;
+const sendData = state => state.auth;
+const getDataALL = state => state.auth;
 
 const gesIsErrorData = state => {
   const message = getMessage(state);
@@ -39,4 +41,6 @@ export const authSelectors = {
   getUserAdviceCalorie,
   getUserNotRecommendProd,
   getTokens,
+  sendData,
+  getDataALL
 };
